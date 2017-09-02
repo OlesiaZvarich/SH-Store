@@ -107,25 +107,26 @@
             <div class="contact-box login-box">
                 <form id="form_login" name="formLogin">
                     <div  class="form">
-                        <small>User Name</small><span class="errorStyle" id="errorName"></span>
+                        <small>User Name</small>
                         <div class="text">
-                            <input  id="log_inUserName" type="text" name="Name"/>
-
+                            <span class="errorStyle" id="errorName"></span>
+                            <input  id="log_inUserName" type="text" name="userName"/>
                         </div>
                     </div>
                     <div class="form">
-                        <small>Password</small><span class="errorStyle" id="errorPassword"></span>
+                        <small>Password</small>
                         <div class="text">
-                            <input id="log_inUserPassword" type="password"/>
+                            <span  id="errorPassword"></span>
+                            <input id="log_inUserPassword" type="password" name="userPassword"/>
                         </div>
                     </div>
                     <div class="text">
                         <input id="btnLogin" type="submit" value="Login"/>
                     </div>
                 </form>
-                <div class="text">
-                    <a href="#">Forgot Password</a>
-                </div>
+                <!--<div class="text">-->
+                    <!--<a href="#">Forgot Password</a>-->
+                <!--</div>-->
 
             </div>
             <div class="coats login-bot">
@@ -136,9 +137,6 @@
                         Register Here
                     </a>
                 </div>
-            </div>
-            <div class="look">
-                <h3>You May Also Like</h3>
             </div>
         </div>
     </section>
