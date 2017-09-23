@@ -62,7 +62,28 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a class="navig-a" href="../../assets/pages/new_arrivels.html">New Arrivels</a></li>
+                        <li><a class="navig-a" href="../../assets/pages/new_arrivels.html">New Arrivels</a>
+                            <div class="dropdown-nav">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h3><a href="../../assets/pages/new_arrivels.html"></a></h3>
+                                        <a class="item" href="../../assets/pages/new_arrivels.html"><div class="img-men-new"></div></a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3><a href="../../assets/pages/new_arrivels.html"></a></h3>
+                                        <a class="item" href="../../assets/pages/new_arrivels.html"><div class="img-women-new"></div></a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3><a href="../../assets/pages/new_arrivels.html"></a></h3>
+                                        <a class="item" href="../../assets/pages/new_arrivels.html"><div class="img-men-new2"></div></a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3><a href="../../assets/pages/new_arrivels.html"></a></h3>
+                                        <a class="item" href="../../assets/pages/new_arrivels.html"><div class="img-women-new2"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li><a class="navig-a" href="../../assets/pages/about.html">About</a></li>
                     </ul>
                 </div>
@@ -108,17 +129,14 @@
 
                         <div class="col-md-7">
                             <div class="left_single">
-                                <span class="demowrap"><img id="demo2" src="../img/woman/coats_woman/coat1.jpg"/></span>
-                                <ul id="demo2carousel" class="elastislide-list">
-                                    <li><a href="#"><img src="../img/woman/coats_woman/coat1.jpg"></a></li>
-                                </ul>
+                                <span class="demowrap"><img id="demo" src="../img/woman/coats_woman/coat1.jpg"/></span>
                             </div>
                         </div>
 
                         <div class="col-md-5">
                             <div class="right_single">
                                 <div class="name_single">
-                                    <h3 class="item_name">Grey coat for woman</h3>
+                                    <h3 class="item_name">Grey coat</h3>
                                 </div>
 
                                 <div class="article_single">
@@ -347,29 +365,28 @@
 <script type="text/javascript" src="../../build/scripts.min.js"></script>
 <script>
     //autocomplete
-    $(document).ready(function () {
-        let options = {
-            url: "../../assets/data-json/data-autocomplete.json",
 
-            getValue: "text",
+    let options = {
+        url: "../../assets/data-json/data-autocomplete.json",
 
-            template: {
-                type: "links",
-                fields: {
-                    link: "../../website-link"
-                }
-            },
-            list: {
-                match: {
-                    enabled: true
-                },
-                maxNumberOfElements: 4
+        getValue: "text",
+
+        template: {
+            type: "links",
+            fields: {
+                link: "../../website-link"
             }
+        },
+        list: {
+            match: {
+                enabled: true
+            },
+            maxNumberOfElements: 4
+        }
 
-        };
+    };
 
-        $("#input-search").easyAutocomplete(options);
-    })
+    $("#input-search").easyAutocomplete(options);
 
 </script>
 </body>
